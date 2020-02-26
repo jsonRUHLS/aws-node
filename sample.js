@@ -2,7 +2,7 @@
 var AWS = require('aws-sdk');
 var uuid = require('uuid');
 
-// update config
+// setting global config
 var myCredentials = new AWS.CognitoIdentityCredentials({IdentityPoolId: 'IDENTITY_POOL_ID'});
 var myConfig = new AWS.Config({
     credentials: myCredentials, region: 'us-ease-1'
